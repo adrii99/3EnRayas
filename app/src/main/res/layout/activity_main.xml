@@ -158,10 +158,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
-        android:onClick="btnPulsado"
+        android:onClick="btnPartida"
         android:text="ToggleButton"
-        android:textOff="STOP"
         android:textOn="START"
+        android:textOff="STOP"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
