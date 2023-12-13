@@ -19,7 +19,8 @@ public class Aleatoria extends AndroidJugada {
 
 
     @Override
-    public void play() {
+    public void play()
+    {
 
         Random aleatorio = new Random();
 
