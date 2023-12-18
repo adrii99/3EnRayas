@@ -10,14 +10,16 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="cursive"
-        android:text="3 EN RAYAS"
+        android:text="@string/_3_en_rayas"
+        android:textAlignment="center"
         android:textColor="#FDFFC107"
-        android:textSize="34sp"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +33,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btn9"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn7"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn9"
@@ -43,7 +46,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn8"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn6"
@@ -55,7 +59,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn5"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn5"
@@ -67,7 +72,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btn6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn4"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn4"
@@ -79,7 +85,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btn5"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn7"
@@ -91,7 +98,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btn8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn2"
@@ -103,7 +111,8 @@
         app:layout_constraintEnd_toStartOf="@+id/btn3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn1"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn1"
@@ -115,7 +124,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@color/material_dynamic_neutral60"
-        android:onClick="pintarJugada" />
+        android:onClick="pintarJugada"
+        android:importantForAccessibility="no" />
 
     <ImageButton
         android:id="@+id/btn3"
@@ -127,7 +137,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btn2"
-        app:srcCompat="@color/material_dynamic_neutral60" />
+        app:srcCompat="@color/material_dynamic_neutral60"
+        android:importantForAccessibility="no" />
 
     <RadioGroup
         android:id="@+id/RadioGroup"
@@ -144,13 +155,13 @@
             android:id="@+id/rbFacil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Modo facil" />
+            android:text="@string/modo_facil" />
 
         <RadioButton
             android:id="@+id/rbDificil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Modo Dificil" />
+            android:text="@string/modo_dificil" />
     </RadioGroup>
 
     <ToggleButton
@@ -158,23 +169,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
-        android:text="ToggleButton"
-        android:textOff="STOP"
-        android:textOn="START"
+        android:text="@string/togglebutton"
+        android:textOff="@string/start"
+        android:textOn="@string/stop"
         app:layout_constraintBottom_toTopOf="@+id/btn3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtResult"
-        android:layout_width="216dp"
-        android:layout_height="26dp"
-        android:layout_marginBottom="48dp"
-        android:text="Has ganado!!!!"
+        android:layout_width="369dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="36dp"
+        android:text="Elige un modo antes de empezar"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
